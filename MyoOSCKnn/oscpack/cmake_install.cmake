@@ -1,4 +1,4 @@
-# Install script for directory: C:/Users/dave/Desktop/montrealProject/montrealProject/oscpack
+# Install script for directory: C:/Users/dave/Desktop/MyoOSCKnn/MyoOSCKnn/oscpack
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -35,5 +35,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "C:/Users/dave/Desktop/montrealProject/montrealProject/oscpack/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "C:/Users/dave/Desktop/MyoOSCKnn/MyoOSCKnn/oscpack/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

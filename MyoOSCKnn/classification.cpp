@@ -51,7 +51,6 @@ int classification::classify_rf(int emg[], int imu[])
 	int classification = 0;
 	PyObject *pValue;
 	pValue = PyObject_CallMethod(pInstance, "classifyPython", "iiiiiiiiiii", emg[0], emg[1], emg[2], emg[3], emg[4], emg[5], emg[6], emg[7], imu[0], imu[1], imu[2]);
-
 	if (pValue != NULL)
 	{
 		classification = PyInt_AsLong(pValue);
@@ -68,4 +67,9 @@ int classification::classify_rf(int emg[], int imu[])
 void classification::train_classifier()
 {
 	PyObject_CallMethod(pInstance, "read_data", "");
+}
+
+void classification::reset_training_vector()
+{
+	PyObject_CallMethod(pInstance, "reset_accumulate_data", "");
 }

@@ -263,11 +263,11 @@ int sendOSC(int classdetect) {
 		<< osc::BeginMessage("/dxl/0/G");
 	switch (classdetect) {
 		case 1:
-			p << (float)-1 << osc::EndMessage << osc::EndBundle;
+			p << (float)-3 << osc::EndMessage << osc::EndBundle;
 			transmitSocket.Send(p.Data(), p.Size());
 			break;
 		case 2:
-			p << (float)1 << osc::EndMessage << osc::EndBundle;
+			p << (float)3 << osc::EndMessage << osc::EndBundle;
 			transmitSocket.Send(p.Data(), p.Size());
 			break;
 		case 3:
